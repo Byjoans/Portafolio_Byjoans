@@ -36,7 +36,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 glass border-b border-white/5">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="/" className="text-sm font-bold tracking-tighter flex items-center gap-2">
+        <a href="/Portafolio_Byjoans/" className="text-sm font-bold tracking-tighter flex items-center gap-2">
           <div className="w-6 h-6 bg-accent rounded flex items-center justify-center text-black text-[10px]">JM</div>
           JOAN S. MOSQUERA
         </a>
