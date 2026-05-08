@@ -117,9 +117,9 @@ const ProfileModal = ({ isOpen, onClose }: { isOpen: boolean, onClose: () => voi
             initial={{ opacity: 0, scale: 0.9, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.9, y: 20 }}
-            className="relative w-full max-w-2xl bg-neutral-900/90 border border-white/10 rounded-3xl md:rounded-[2.5rem] overflow-hidden shadow-2xl max-h-[85vh] flex flex-col"
+            className="relative w-full max-w-2xl bg-neutral-900/90 border border-white/10 rounded-3xl md:rounded-[2.5rem] overflow-hidden shadow-2xl max-h-[90vh] flex flex-col"
           >
-            <div className="absolute top-6 right-6 z-10">
+            <div className="absolute top-4 right-4 md:top-6 md:right-6 z-10">
               <button 
                 onClick={onClose}
                 className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-white/10 transition-colors"
@@ -128,8 +128,8 @@ const ProfileModal = ({ isOpen, onClose }: { isOpen: boolean, onClose: () => voi
               </button>
             </div>
 
-            <div className="p-8 md:p-12 overflow-y-auto custom-scrollbar">
-              <div className="flex items-center gap-4 mb-8">
+            <div className="p-6 md:p-12 overflow-y-auto custom-scrollbar">
+              <div className="flex items-center gap-4 mb-6 md:mb-8">
                 <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center text-accent">
                   <Info size={24} />
                 </div>
@@ -295,10 +295,10 @@ const Hero = () => {
             initial={{ opacity: 0, filter: "blur(40px)", scale: 1.1, y: 30 }}
             animate={{ opacity: 1, filter: "blur(0px)", scale: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 1.8, ease: "easeOut" }}
-            className="lg:col-span-8 lg:absolute lg:-right-32 lg:top-1/2 lg:-translate-y-1/2 z-10 mt-4 lg:mt-0 p-0 md:p-12"
+            className="lg:col-span-8 lg:absolute lg:-right-32 lg:top-1/2 lg:-translate-y-1/2 z-10 mt-8 lg:mt-0 p-0 md:p-12"
           >
             <div className="relative w-full max-w-4xl mx-auto">
-              <div className="relative aspect-square w-[110%] -left-[5%] md:w-full md:left-0">
+              <div className="relative aspect-square w-[130%] -left-[15%] md:w-full md:left-0">
                 <img 
                   src="https://res.cloudinary.com/drjy92ddg/image/upload/v1775747466/Dise%C3%B1o_sin_t%C3%ADtulo_4_s7tytp.png" 
                   alt="Joan S. Mosquera Illustration" 
@@ -336,7 +336,7 @@ const VideoPitch = () => {
       </div>
       
       {/* Dynamic Overlay Text */}
-      // <div className="absolute inset-x-0 top-0 h-1/3 z-10 pointer-events-none bg-gradient-to-b from-black/60 to-transparent" />
+      {/* <div className="absolute inset-x-0 top-0 h-1/3 z-10 pointer-events-none bg-gradient-to-b from-black/60 to-transparent" /> */}
       
       <div className="absolute top-12 left-12 z-30 pointer-events-none">
         <motion.div
